@@ -1,7 +1,7 @@
 ---
 
 - name: install nginx
-  apt: pkg=nginx-light state=present
+  apt: pkg=nginx-extras state=present
 
 - name: create config directories
   file: "path=/etc/nginx/{{ item }} state=directory owner=root group=root mode=0755"
